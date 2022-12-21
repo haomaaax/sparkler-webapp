@@ -56,7 +56,7 @@ const callGenerateEndpoint = async () => {
             placeholder="Something like a hero with legendary sword or mysterious dragons in dark dungeon"
             value={userInput}
             onChange={onUserChangedText}
-          />;
+          />
           {/* Add button here */}
           <div className="prompt-buttons">
             <a
@@ -73,7 +73,7 @@ const callGenerateEndpoint = async () => {
             <div className="output">
               <div className="output-header-container">
                 <div className="output-header">
-                  <h3>Pick your favorite one and go to Step 2!</h3>
+                  <h3>Here's your story :D</h3>
                 </div>
               </div>
               <div className="output-content">

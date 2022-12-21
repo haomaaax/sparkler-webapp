@@ -8,8 +8,8 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Generate a list of 3 chapters headline and a preview storyline that includes the following elements or characters with vivid description,
-make sure to keep preview short but appealing.
+Generate a headline and a storyline preview that includes the following elements or characters with vivid description,
+make sure to keep the preview short but appealing.
 
 Elements:
 `

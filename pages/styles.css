@@ -10,7 +10,7 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-image: url("../assets/matrix.jpg");
+    background-image: url("https://i.imgur.com/VpcWuoF.jpg");
     background-size: center;
     flex-flow: column nowrap;
     gap: 10px;
