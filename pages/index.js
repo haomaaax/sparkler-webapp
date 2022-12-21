@@ -46,7 +46,7 @@ const callGenerateEndpoint = async () => {
             <h1>Create your own comic</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Enter anything you want to show up in storyline</h2>
+            <h2>Step 1: Enter anything you want to show up in storyline</h2>
           </div>
         </div>
         {/* Add prompt text box here */}
@@ -73,7 +73,7 @@ const callGenerateEndpoint = async () => {
             <div className="output">
               <div className="output-header-container">
                 <div className="output-header">
-                  <h3>Storyline based on your prompt</h3>
+                  <h3>Pick your favorite one and go to Step 2!</h3>
                 </div>
               </div>
               <div className="output-content">

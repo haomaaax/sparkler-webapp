@@ -8,11 +8,10 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Generate a storyline that includes the following elements or characters with vivid description,   
+Generate a list of 3 chapters headline and a preview storyline that includes the following elements or characters with vivid description,
+make sure to keep preview short but appealing.
 
-Headline:
-
-Storyline:
+Elements:
 `
 const generateAction = async (req, res) => {
   // Run first prompt

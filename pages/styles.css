@@ -10,7 +10,8 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-image: url("../assets/matrix.jpg");
+    background-size: center;
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
@@ -172,7 +173,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background-color: rgb(1, 146, 88);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
