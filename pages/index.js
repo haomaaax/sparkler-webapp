@@ -46,7 +46,7 @@ const callGenerateEndpoint = async () => {
             <h1>Create your own comic</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Step 1: Enter anything you want to show up in storyline</h2>
+            <h2>Step 1: Unleash Your Inner Creator with Our AI-Powered Comic Storyline Generator</h2>
           </div>
         </div>
         {/* Add prompt text box here */}
