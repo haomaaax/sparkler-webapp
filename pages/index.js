@@ -53,7 +53,7 @@ const callGenerateEndpoint = async () => {
         <div className="prompt-container">
           <textarea
             className="prompt-box"
-            placeholder="Something like a hero with legendary sword or mysterious dragons in dark dungeon"
+            placeholder="Please enter the elements you would like to include in your generated comic storyline, separated by commas: (e.g. superhero, alien invasion, time travel)"
             value={userInput}
             onChange={onUserChangedText}
           />
