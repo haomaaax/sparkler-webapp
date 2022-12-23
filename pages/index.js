@@ -1,34 +1,58 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
-import twitterLogo from '../assets/twitter-logo.png';
-import { useState } from 'react';
+import Head from "next/head";
+import Image from "next/image";
+import buildspaceLogo from "../assets/buildspace-logo.png";
+import twitterLogo from "../assets/twitter-logo.png";
+import { useState } from "react";
 
 const Home = () => {
-  const [userInput, setUserInput] = useState('');
+  const [userInput, setUserInput] = useState("");
+  const [apiOutput, setApiOutput] = useState("");
 
-  const [apiOutput, setApiOutput] = useState('')
-const [isGenerating, setIsGenerating] = useState(false)
+  const [comicInput, setComicInput] = useState([])
+  const [comicOutput, setComicOutput] = useState([])
 
-const callGenerateEndpoint = async () => {
-  setIsGenerating(true);
-  
-  console.log("Calling OpenAI...")
-  const response = await fetch('/api/generate', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ userInput }),
-  });
+  const [isGenerating, setIsGenerating] = useState(false);
 
-  const data = await response.json();
-  const { output } = data;
-  console.log("OpenAI replied...", output.text)
+  console.log('comicInput', comicInput)
+  const callGenerateEndpoint = async () => {
+    setIsGenerating(true);
 
-  setApiOutput(`${output.text}`);
-  setIsGenerating(false);
-}
+    console.log("Calling OpenAI...");
+    const response = await fetch("/api/generate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ userInput }),
+    });
+
+    const data = await response.json();
+    const { output } = data;
+    console.log("OpenAI replied...", output.text);
+
+    setApiOutput(`${output.text}`);
+    setComicInput(`${output.text}`.split('.').filter(item => item!=""))
+    setIsGenerating(false);
+  };
+
+  const callGenerateComicEndpoint = async () => {
+    console.log('callGenerateComicEndpoint')
+    setIsGenerating(true);
+    Promise.all(comicInput.map(item => {
+      //call api
+      // await api()
+      //return api()
+    }))
+    .then(values => {
+      setComicOutput(values)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+    .finally(() => {
+      setIsGenerating(false)
+    })
+  };
 
   const onUserChangedText = (event) => {
     console.log(event.target.value);
@@ -60,11 +84,17 @@ const callGenerateEndpoint = async () => {
           {/* Add button here */}
           <div className="prompt-buttons">
             <a
-              className={isGenerating ? 'generate-button loading' : 'generate-button'}
+              className={
+                isGenerating ? "generate-button loading" : "generate-button"
+              }
               onClick={callGenerateEndpoint}
             >
               <div className="generate">
-                {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
+                {isGenerating ? (
+                  <span className="loader"></span>
+                ) : (
+                  <p>Generate</p>
+                )}
               </div>
             </a>
           </div>
@@ -79,8 +109,28 @@ const callGenerateEndpoint = async () => {
               <div className="output-content">
                 <p>{apiOutput}</p>
               </div>
+              <div className="prompt-buttons">
+                <a
+                  className={isGenerating ? 'generate-button loading' : 'generate-button'}
+                  onClick={callGenerateComicEndpoint}
+                >
+                  <div className="generate">
+                    {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="I&#39;m generating my comic storyline with @sparklerclub 🎇 Try it here:" data-url="https://sparkler-webapp-production.up.railway.app/" data-related="haomaaax" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
             </div>
           )}
+          {
+            comicOutput.length > 0 && (
+              comicOutput.map((item, key) => {
+                <img key={key} src={item} />
+              })
+            )
+          }
         </div>
       </div>
       <div className="badge-container grow">
@@ -96,11 +146,7 @@ const callGenerateEndpoint = async () => {
         </a>
       </div>
       <div className="badge-container-right grow">
-        <a
-          href="https://twitter.com/haomaaax"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://twitter.com/haomaaax" target="_blank" rel="noreferrer">
           <div className="badge">
             <Image src={twitterLogo} alt="twitter logo" />
             <p>built by maaax</p>
