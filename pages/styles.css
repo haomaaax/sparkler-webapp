@@ -76,7 +76,7 @@ body {
     gap: 16px;
     height: min-content;
     padding: 0px;
-    width: min-content;
+    width: 100%;
 }
 
 .prompt-box {
