@@ -8,6 +8,9 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
+Illustration of the storyline, focus on the character and scenario, vibrant colors.
+
+Storyline: 
 `
 const generateAction = async (req, res) => {
   // Run first prompt
@@ -16,7 +19,7 @@ const generateAction = async (req, res) => {
   const baseCompletion = await openai.createImage({
     prompt: `${basePromptPrefix}${req.body.userInput}\n`,
     n: 1,
-    size: '1024x1024'
+    size: '512x512'
   });
   const basePromptOutput = baseCompletion.data.data[0]
 

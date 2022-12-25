@@ -15,13 +15,13 @@ const callApi = async (path, params) => {
   const { output } = data
   return output
 }
-const RenderStory = memo(({storyOutput}) => {
+const RenderStory = (({storyOutput}) => {
   console.log('renderStory', storyOutput)
   return storyOutput && (
     <div className="output">
       <div className="output-header-container">
         <div className="output-header">
-          <h3>Here's your story :D</h3>
+          <h3>Here is your story :D</h3>
         </div>
       </div>
       <div className="output-content">
@@ -31,7 +31,7 @@ const RenderStory = memo(({storyOutput}) => {
   )
 })
 
-const RenderComic = memo(({comicOutput}) => {
+const RenderComic = (({comicOutput}) => {
   console.log('renderComic', comicOutput)
   const hasResult = comicOutput.length > 0 && comicOutput.every(comic => !!comic?.url)
   return (
@@ -75,7 +75,7 @@ const Home = () => {
       console.log(error)
       setIsGenerating(false)
     }
-  },[]);
+  },[userInput]);
 
   const callGenerateComicEndpoint = useCallback(() => {
     const comicInput = `${storyOutput}`.split('.').filter(item => item!="")
