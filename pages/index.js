@@ -111,7 +111,7 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>Sparkler 🎇</title>
+        <title>Sparkler</title>
       </Head>
       <div className="container">
         <Header />
