@@ -9,5 +9,5 @@ Let's create your own comic in 5 mins:
 Unleash Your Inner Creator with Our AI-Powered Comic Storyline Generator.
 
 # Support this project
-ETH: maaax.eth
-SOL: maaax.sol
+- ETH: maaax.eth
+- SOL: maaax.sol

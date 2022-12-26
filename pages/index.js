@@ -121,7 +121,7 @@ const Home = () => {
               <Step text={'Step 1: Enter anything you want to show up in storyline'} />
               <textarea
                 className="prompt-box"
-                placeholder="Something like a hero with legendary sword or mysterious dragons in dark dungeon"
+                placeholder="Please enter the elements you would like to include in your generated comic storyline, separated by commas: (e.g. superhero, alien invasion, time travel)"
                 value={userInput}
                 onChange={onUserChangedText}
               />
@@ -133,7 +133,7 @@ const Home = () => {
         {
           currentStep >= 1 && (
             <div className="prompt-container">
-              <Step text={'Step 2: Press generate button to watch comic result'} />
+              <Step text={'Step 2: Hit Generate button and check out your masterpiece!'} />
               <GenerateButton isGenerating={isGenerating} onClick={callGenerateComicEndpoint} />
               <RenderComic comicOutput={comicOutput} />
             </div>
