@@ -8,7 +8,7 @@ export default function Document() {
         <meta property="og:description" content="built by maaax.sol" key="description"/>
         <meta
           property="og:image"
-          content="https://i.imgur.com/2Nn4J5M.png"
+          content="https://res.cloudinary.com/dvigzwtsu/image/upload/v1672154960/2_zs6d1t.png"
         />
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
