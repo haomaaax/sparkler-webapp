@@ -1,12 +1,12 @@
 # sparkler-webapp
 
-Let's create your own comic in 5 mins:
+Create your own comic in just two clicks:
 
-- Step1: Generate storyline preview with elements that you want in your comic. (On prod)
-- Step2: Generate four graphics based on your prompts. (On prod)
+- Step1: Generate storyline with elements that you want to show up in your comic. (On prod)
+- Step2: Generate graphics based on your storyline. (On prod)
 - Step3: Share your arts on twitter. (In dev)
 
-Unleash Your Inner Creator with Our AI-Powered Comic Storyline Generator.
+Enjoy!!
 
 # Support this project
 - ETH: maaax.eth
