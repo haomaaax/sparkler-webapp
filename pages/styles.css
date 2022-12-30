@@ -203,6 +203,30 @@ textarea {
     margin: 0;
 }
 
+.twitter-share a{
+    place-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(29, 161, 242);
+    border-radius: 100px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: min-content;
+    overflow: hidden;
+    padding: 16px 24px;
+    position: relative;
+    text-decoration: none;
+    width: max-content;
+    will-change: transform;
+    cursor: pointer;
+}
+
+.twitter-share p {
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
 .loading {
     opacity: 0.7;
     cursor: default;

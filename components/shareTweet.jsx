@@ -1,14 +1,11 @@
 const ShareTweet = () => {
-    return (
-        <div>
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
-            class="twitter-share-button" 
-            data-size="large" 
-            data-text="Generating my first comic with @sparklerclub 🎇 Try it here:" 
-            data-url="https://sparkler.club" 
-            data-show-count="false">Tweet about Sparkler!</a>
-        </div>
-    )
-}
+  return (
+    <div className="twitter-share">
+      <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsparkler.club%2F&text=Create+my+FIRST+comic+with+AI+🤯+Try+it+here+🎇:&via=haomaaax&hashtags=GPT3%2CDALLE2%2CAI">
+        <p>Tweet out your spark 🎇</p>
+      </a>
+    </div>
+  );
+};
 
-export default ShareTweet
+export default ShareTweet;
