@@ -133,7 +133,7 @@ const Home = () => {
         {
           currentStep >= 1 && (
             <div className="prompt-container">
-              <Step text={'Step 2: Hit Generate button and check out your masterpiece!'} />
+              <Step text={'Step 2: Hit Generate button and check out cool graphics!'} />
               <GenerateButton isGenerating={isGenerating} onClick={callGenerateComicEndpoint} />
               <RenderComic comicOutput={comicOutput} />
             </div>
@@ -141,7 +141,10 @@ const Home = () => {
         }
         {
           currentStep >= 2 && (
-            <ShareTweet />
+            <div className="prompt-container">
+              <Step text={'Step 3: Congrats! Share your masterpieces to the world!'} />
+              <ShareTweet />
+            </div>
           )
         }
       </div>
