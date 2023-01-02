@@ -21,7 +21,7 @@ const RenderStory = (({storyOutput}) => {
     <div className="output">
       <div className="output-header-container">
         <div className="output-header">
-          <h3>Here is your story :D</h3>
+          <h3>🪄 Your story ✨</h3>
         </div>
       </div>
       <div className="output-content">
@@ -36,6 +36,9 @@ const RenderComic = (({comicOutput}) => {
   const hasResult = comicOutput.length > 0 && comicOutput.every(comic => !!comic?.url)
   return (
     <>
+    <div className="output-header">
+      <h3>🪄 Your graphics ✨</h3>
+    </div>
       {
         hasResult && comicOutput.map((comic, key) => {
           return <img key={key} src={comic.url} width="50%" />
