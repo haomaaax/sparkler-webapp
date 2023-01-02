@@ -8,8 +8,8 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Generate a headline and a storyline preview that includes the following elements or characters with vivid description,
-make sure to keep the preview short but appealing.
+Give me a headline and a storyline that includes the following elements with detail description on the scenarios.
+Keep the storyline appealing but short.
 
 Elements:
 `
@@ -21,7 +21,7 @@ const generateAction = async (req, res) => {
     model: 'text-davinci-003',
     prompt: `${basePromptPrefix}${req.body.userInput}\n`,
     temperature: 0.7,
-    max_tokens: 250,
+    max_tokens: 500,
   });
   
   const basePromptOutput = baseCompletion.data.choices.pop();

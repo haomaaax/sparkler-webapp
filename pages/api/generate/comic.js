@@ -8,7 +8,8 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Illustration of the storyline, focus on the character and scenario, vibrant colors.
+Illustration of the storyline with Japanese manga style, ultra detail, anime style portrait, best quality, sharp focus, extremely detailed eyes.
+Make the graphic black and white with japanese cartoonist sketch style.
 
 Storyline: 
 `
