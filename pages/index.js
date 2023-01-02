@@ -118,10 +118,10 @@ const Home = () => {
         {
           currentStep >= 0 && (
             <div className="prompt-container">
-              <Step text={'Step 1: Enter anything you want to show up in storyline'} />
+              <Step text={'Step 1: Enter any text you want to appear in the storyline.'} />
               <textarea
                 className="prompt-box"
-                placeholder="Please enter the elements you would like to include in your generated comic storyline, separated by commas: (e.g. superhero, alien invasion, time travel)"
+                placeholder="If you don't enter any elements, we'll provide you with a random storyline."
                 value={userInput}
                 onChange={onUserChangedText}
               />
@@ -133,7 +133,7 @@ const Home = () => {
         {
           currentStep >= 1 && (
             <div className="prompt-container">
-              <Step text={'Step 2: Hit Generate button and check out cool graphics!'} />
+              <Step text={'Step 2: Click the Generate button to see the cool graphics that are generated based on your storyline.'} />
               <GenerateButton isGenerating={isGenerating} onClick={callGenerateComicEndpoint} />
               <RenderComic comicOutput={comicOutput} />
             </div>
@@ -142,7 +142,7 @@ const Home = () => {
         {
           currentStep >= 2 && (
             <div className="prompt-container">
-              <Step text={'Step 3: Congrats! Share your masterpieces to the world!'} />
+              <Step text={'Step 3: Congratulations! Share your creations with the world!'} /> 
               <ShareTweet />
             </div>
           )

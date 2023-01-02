@@ -10,7 +10,7 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-image: url("https://res.cloudinary.com/dvigzwtsu/image/upload/v1672153559/matrix_f91pzs.jpg");
+    background: #F2EDD7;
     background-size: center;
     flex-flow: column nowrap;
     gap: 10px;
@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    color: #FFF
+    color: #755139
 }
 
 .header-title {
@@ -64,7 +64,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.4em;
-    color: rgba(255, 255, 255, 0.75);
+    color: #755139
 }
 
 .prompt-container {
@@ -81,7 +81,7 @@ body {
 
 .prompt-box {
     border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: #755139;
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
@@ -109,7 +109,7 @@ body {
     letter-spacing: 0px;
     line-height: 1.6em;
     text-align: start;
-    color: rgba(255, 255, 255, 0.75);
+    color: #755139;
     text-decoration: none;
     text-transform: none;
 }
@@ -120,7 +120,7 @@ textarea {
 
 
 .prompt-box:focus {
-    border-color:rgba(255, 255, 255, 0.75)
+    border-color:#755139
 }
 
 
@@ -149,7 +149,7 @@ textarea {
 }
 
 .key-stroke p {
-    color: rgba(255, 255, 255, 0.75);
+    color: #755139;
     flex: 0 0 auto;
     height: auto;
     position: relative;
@@ -167,13 +167,13 @@ textarea {
 }
 
 .or p {
-    color: rgba(255, 255, 255, 0.25)
+    color: #755139;
 }
 
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(1, 146, 88);
+    background: #755139;
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -361,7 +361,7 @@ textarea {
     letter-spacing: 0px;
     line-height: 1.4em;
     text-align: start;
-    color: #ffffff;
+    color: #755139;
     text-decoration: none;
     text-transform: none;
     margin: 0;
@@ -380,7 +380,7 @@ textarea {
 .output-content p {
     text-align: center;
     white-space: pre-line;
-    color: rgba(255, 255, 255, 0.5);
+    color: #755139;
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
