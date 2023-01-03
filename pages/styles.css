@@ -251,7 +251,7 @@ textarea {
     border-style: solid;
     border-top-width: 1px;
     background-color: #755139;
-    border-radius: 54.3478% / 238.095%;
+    border-radius: 100px;
     transform: none;
     transform-origin: 50% 50% 0px;
     font-size: 14px;
@@ -259,7 +259,7 @@ textarea {
     letter-spacing: -0.5px;
     line-height: 1em;
     color: #fff;
-    padding: 12px;
+    padding: 13px;
     text-decoration: none;
 }
 

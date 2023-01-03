@@ -12,7 +12,7 @@ const FooterBadge = () => {
         >
           <div className="badge">
             <Image src={twitterLogo} alt="twitter logo" />
-            <p>built by maaax</p>
+            {/*<p>built by maaax</p>*/}
           </div>
         </a>
       </div>
