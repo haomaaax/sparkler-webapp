@@ -8,7 +8,7 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Give me a headline and a storyline that includes the following elements with detail description on the scenarios.
+Give me a headline and a storyline that includes the following elements with vivid description.
 Keep the storyline appealing but short.
 
 Elements:
