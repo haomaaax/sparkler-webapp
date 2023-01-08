@@ -13,7 +13,7 @@ Enjoy and tweet out your spark on Twitter or any other social platform!
 - Targeting users specifically love Japanese manga, generate manga style images.
 
 # In Development
-- Improve graphic qualtiy by enhance prompts
+- Improve graphic quality by enhance prompts
 - Create 4 frame comic strip in 1024x1024 format, for better UX.
   - Restrict storyline generation in 4 chapters.
   - Only generate 4 images, reduce OpenAI API cost as well.
