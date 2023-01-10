@@ -8,8 +8,8 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Give me a headline and subtitle with storylines of 4 chapters content that includes the following elements with vivid description.
-Keep the storyline appealing but short. Attach a '*' symbol both to the start of 4 chapters.
+Give me a storyline summary and 4 chapters storyline that includes the following elements with vivid description.
+Keep the storyline appealing but short. Attach one * symbol to the start of each chapters.
 
 Elements:
 `
