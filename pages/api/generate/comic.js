@@ -9,8 +9,8 @@ const openai = new OpenAIApi(configuration);
 const basePromptPrefix =
 `
 Illustration of the storyline with anime portrait by Makoto Shinkai, Miyazaki Hayao, Hosoda Mamoru, highly detail, best quality, masterpiece.
-Art style of A1-picture studio, Kyoto Animation, P.A. Works, ufotable animation
-Make the graphic with monochrome pencil sketch style, extremely detailed and shining eyes, very detailed smooth hair, best quality clean face.
+Art style of Japanese anime studio works, A1-picture studio, Kyoto Animation, P.A. Works, ufotable animation
+Make the graphic with pencil sketch style, extremely detailed and shining eyes, very detailed smooth hair, best quality clean face.
 
 Storyline: 
 `
