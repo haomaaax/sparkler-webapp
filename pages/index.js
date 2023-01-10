@@ -81,7 +81,8 @@ const Home = () => {
   },[userInput]);
 
   const callGenerateComicEndpoint = useCallback(() => {
-    const comicInput = `${storyOutput}`.split('.').filter(item => item!="")
+    // const comicInput = `${storyOutput}`.split('.').filter(item => item!="")
+    const comicInput = `${storyOutput}`.split('Subtitle')[1].split('*').filter(item => item!="")
     console.log('callGenerateComicEndpoint', comicInput)
     setIsGenerating(true);
     Promise.all(comicInput.map(item => {
