@@ -8,8 +8,8 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Illustration of the storyline with anime portrait, artworks by makoto shinkai, highly detail, best quality, masterpiece.
-Make the graphic monochrome with sketch style, extremely detailed eyes, very detailed hair, best quality face.
+Illustration of the storyline with anime portrait by Makoto Shinkai, Miyazaki Hayao, Hosoda Mamoru , highly detail, best quality, masterpiece.
+Make the graphic monochrome with pencil sketch style, extremely detailed and shining eyes, very detailed smooth hair, best quality face.
 
 Storyline: 
 `
