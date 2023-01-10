@@ -8,7 +8,7 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Give me a storyline summary and 4 chapters storyline that includes the following elements with vivid description.
+Give me a headline and a 4-chapter storyline that have following story elements.
 Keep the storyline appealing but short. Attach one * symbol to the start of each chapters.
 
 Elements:
@@ -20,7 +20,7 @@ const generateAction = async (req, res) => {
   const baseCompletion = await openai.createCompletion({
     model: 'text-davinci-003',
     prompt: `${basePromptPrefix}${req.body.userInput}\n`,
-    temperature: 0.7,
+    temperature: 0.8,
     max_tokens: 500,
   });
   
