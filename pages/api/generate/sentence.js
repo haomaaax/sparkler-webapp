@@ -8,7 +8,7 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Give me a headline and a 4-chapter storyline that have following story elements along with beautiful heroine.
+Give me a headline and a 4-chapter storyline that have following story elements along with heroine.
 Keep the storyline appealing but short. Attach one * symbol to the start of each chapters.
 
 Elements:
