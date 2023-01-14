@@ -9,19 +9,19 @@ Create your own comic in just two clicks:
 Enjoy and tweet out your spark on Twitter or any other social platform!
 
 
+# In Development
+- Choose specific manga styles
+  - Pencil sketch, watercolor, mono
+
 # Done
 - Targeting users specifically love Japanese manga, generate manga style images.
-
-# In Development
 - Improve graphic quality by enhance prompts
-- Create 4 frame comic strip in 1024x1024 format, for better UX.
+- Create 4 frame comic strip
   - Restrict storyline generation in 4 chapters.
   - Only generate 4 images, reduce OpenAI API cost as well.
 
 
 # Backlogs
-- Make the graphic output four-frame comics, easier social sharing
-- Choose specific manga styles
 
 
 # Support this project
