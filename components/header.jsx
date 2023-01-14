@@ -2,9 +2,9 @@ const Header = () => {
     return (
     <div className="header">
         <div className="header-title">
-            <h1>Create your own comic</h1>
+            <h1>Manga Generator in 2 clicks</h1>
         </div>
-        <h3>Unleash Your Inner Creator with Our AI-Powered Comic Generator</h3>
+        <h3>One click for storyline, the other for graphic.</h3>
     </div>
     )
 }
