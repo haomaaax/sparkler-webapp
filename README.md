@@ -22,6 +22,7 @@ Enjoy and tweet out your spark on Twitter or any other social platform!
 
 
 # Backlogs
+- Text bubble within graphic
 
 
 # Support this project
