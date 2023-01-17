@@ -8,10 +8,11 @@ Create your own comic in just two clicks:
 
 Enjoy and tweet out your spark on Twitter or any other social platform!
 
+- Main app
+  - https://sparkler.club/
+- Sign up for new project update
+  - https://sub.sparkler.club/
 
-# In Development
-- Choose specific manga styles
-  - Pencil sketch, watercolor, mono
 
 # Done
 - Targeting users specifically love Japanese manga, generate manga style images.
@@ -21,8 +22,13 @@ Enjoy and tweet out your spark on Twitter or any other social platform!
   - Only generate 4 images, reduce OpenAI API cost as well.
 
 
+# In Development
+
+
 # Backlogs
 - Text bubble within graphic
+- Choose specific manga styles
+  - Pencil sketch, watercolor, mono
 
 
 # Support this project
