@@ -23,6 +23,10 @@ Enjoy and tweet out your spark on Twitter or any other social platform!
 
 
 # In Development
+- Refactor site structure
+  - Main landing page
+  - Subdomain pages for different features
+  - Newsletter subscription page
 
 
 # Backlogs
